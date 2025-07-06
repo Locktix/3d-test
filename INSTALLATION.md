@@ -49,7 +49,7 @@ Le projet est configuré pour se déployer automatiquement sur GitHub Pages à c
 npm run deploy
 ```
 
-L'URL sera : `https://votre-username.github.io/3d-test/`
+L'URL sera : `https://locktix.github.io/testcaca/`
 
 ## 🔧 Configuration
 

@@ -140,7 +140,7 @@ Le projet est configuré pour être déployé automatiquement sur GitHub Pages :
 npm run deploy
 ```
 
-L'URL sera : `https://votre-username.github.io/3d-test/`
+L'URL sera : `https://locktix.github.io/testcaca/`
 
 ## 🔧 Configuration
 
