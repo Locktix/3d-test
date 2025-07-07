@@ -1,201 +1,185 @@
-# Flyff Universe Clone - MMORPG 3D
+# RPG Aventure 3D - Le Royaume Mystérieux
 
-Un clone de MMORPG 3D inspiré de Flyff Universe, développé avec React, Three.js et TypeScript. Jouable directement dans votre navigateur !
+Un jeu d'aventure RPG en 3D créé avec Python et Ursina Engine.
 
-## 🎮 Fonctionnalités
+## 🎮 Description
 
-- **Monde 3D immersif** avec Three.js et React Three Fiber
-- **Système de classes** : Guerrier, Mage, Archer, Assassin
-- **Zones variées** : Flaris, Saint Morning, Darkon
-- **Interface utilisateur moderne** avec Tailwind CSS et Framer Motion
-- **Système d'inventaire** et d'équipement
-- **Barres de statut** (vie, mana, expérience)
-- **Chat en temps réel** (simulé)
-- **Animations fluides** et effets visuels
-- **Responsive design** compatible mobile
+Plongez dans un monde fantastique en 3D où vous devrez explorer, combattre, accomplir des quêtes et interagir avec les habitants du royaume. Ce RPG offre une expérience immersive avec des graphiques 3D, un système de combat, des quêtes, un inventaire et un système de commerce.
 
-## 🚀 Installation et Démarrage
+## ✨ Fonctionnalités
+
+### 🗺️ Monde 3D
+- **Terrain dynamique** avec herbe, montagnes et arbres
+- **Village** avec maisons, fontaine et NPCs
+- **Donjon** mystérieux à explorer
+- **Éclairage** et effets visuels
+
+### ⚔️ Système de Combat
+- **Combat en temps réel** contre gobelins et trolls
+- **Système de dégâts** et de santé
+- **IA intelligente** pour les ennemis
+- **Différents types d'ennemis** avec comportements uniques
+
+### 📜 Système de Quêtes
+- **5 quêtes principales** avec objectifs variés
+- **Système de progression** et récompenses
+- **Quêtes de niveau** adaptées au joueur
+- **Sauvegarde automatique** des quêtes
+
+### 🎒 Inventaire et Commerce
+- **Système d'inventaire** avec poids limité
+- **Boutique** avec armes, armures et potions
+- **Objets rares** et légendaires
+- **Système de vente** et d'achat
+
+### 🤖 IA Avancée
+- **Comportements réalistes** pour les ennemis
+- **Patrouilles** et détection du joueur
+- **NPCs interactifs** (marchand, garde, sage)
+- **États d'IA** : veille, patrouille, poursuite, attaque, fuite
+
+## 🚀 Installation
 
 ### Prérequis
-- Node.js 18+ 
-- npm ou yarn
+- Python 3.8 ou supérieur
+- pip (gestionnaire de paquets Python)
 
-### Installation
-```bash
-# Cloner le repository
-git clone https://github.com/votre-username/3d-test.git
-cd 3d-test
+### Étapes d'installation
 
-# Installer les dépendances
-npm install
+1. **Cloner le projet**
+   ```bash
+   git clone <url-du-repo>
+   cd 3d-test
+   ```
 
-# Démarrer le serveur de développement
-npm run dev
-```
+2. **Installer les dépendances**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Le jeu sera accessible à l'adresse : `http://localhost:3000`
-
-### Build pour Production
-```bash
-# Construire le projet
-npm run build
-
-# Prévisualiser la build
-npm run preview
-```
+3. **Lancer le jeu**
+   ```bash
+   python main.py
+   ```
 
 ## 🎯 Contrôles
 
-- **WASD** ou **Flèches** : Déplacer le personnage
+### Mouvement
+- **ZQSD** ou **WASD** : Se déplacer
 - **Espace** : Sauter
-- **Clic gauche** : Rotation de la caméra
-- **Molette** : Zoom avant/arrière
+- **Souris** : Regarder autour
 
-### Raccourcis Interface
-- **C** : Ouvrir/Fermer le personnage
-- **I** : Ouvrir/Fermer l'inventaire
-- **K** : Ouvrir/Fermer les compétences
-- **Entrée** : Ouvrir/Fermer le chat
+### Actions
+- **Clic gauche** : Attaquer
+- **E** : Interagir avec les objets/NPCs
+- **I** : Ouvrir l'inventaire
+- **M** : Ouvrir la carte
 
-## 🏗️ Architecture
+### Menu
+- **Échap** : Menu principal
+- **F5** : Sauvegarder
+- **F9** : Charger
+- **R** : Recommencer (après game over)
 
+## 🎮 Guide de Jeu
+
+### Début de Partie
+1. **Explorez le village** pour rencontrer les NPCs
+2. **Parlez au sage** pour obtenir votre première quête
+3. **Récupérez des potions** pour survivre aux combats
+4. **Combattez les gobelins** pour gagner de l'expérience
+
+### Progression
+- **Niveau 1-2** : Quêtes de gobelins et collecte de potions
+- **Niveau 3-4** : Exploration du donjon et protection de la fontaine
+- **Niveau 5+** : Combat contre le troll des montagnes
+
+### Conseils
+- **Sauvegardez régulièrement** avec F5
+- **Utilisez les potions** quand votre vie est faible
+- **Parlez aux NPCs** pour obtenir des quêtes et conseils
+- **Explorez le monde** pour trouver des objets cachés
+
+## 🏗️ Architecture du Code
+
+### Structure des Fichiers
 ```
-src/
-├── components/
-│   ├── game/          # Composants 3D du jeu
-│   │   ├── Player.tsx # Modèle 3D du joueur
-│   │   └── Terrain.tsx # Terrain et environnement
-│   ├── ui/            # Interface utilisateur
-│   │   └── GameUI.tsx # Interface principale
-│   ├── LoginScreen.tsx
-│   ├── LoadingScreen.tsx
-│   └── GameWorld.tsx
-├── stores/
-│   └── gameStore.ts   # État global avec Zustand
-├── App.tsx
-└── main.tsx
-```
-
-## 🛠️ Technologies Utilisées
-
-- **React 18** - Framework UI
-- **TypeScript** - Typage statique
-- **Three.js** - Moteur 3D
-- **React Three Fiber** - Intégration React/Three.js
-- **React Three Drei** - Utilitaires Three.js
-- **Zustand** - Gestion d'état
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **Vite** - Build tool
-- **React Router** - Navigation
-
-## 🎨 Classes Disponibles
-
-### ⚔️ Guerrier
-- **Spécialité** : Combat rapproché, défense
-- **Arme** : Épée à deux mains
-- **Rôle** : Tank, DPS
-
-### 🔮 Mage
-- **Spécialité** : Magie élémentaire, sorts
-- **Arme** : Baguette magique
-- **Rôle** : DPS, Support
-
-### 🏹 Archer
-- **Spécialité** : Combat à distance, précision
-- **Arme** : Arc
-- **Rôle** : DPS, Kiting
-
-### 🗡️ Assassin
-- **Spécialité** : Furtivité, dégâts critiques
-- **Arme** : Dagues
-- **Rôle** : DPS, Burst
-
-## 🌍 Zones du Monde
-
-### 🏘️ Flaris (Niveaux 1-20)
-- Zone de départ paisible
-- Village de Flarine
-- Eau et verdure
-- Parfaite pour les débutants
-
-### 🏰 Saint Morning (Niveaux 21-42)
-- Plus grande ville de Madrigal
-- Désert fantastique
-- Arène PvP
-- Pumpkin Town
-
-### ⚫ Darkon (Niveaux 51-120)
-- Zone industrielle sombre
-- Machines hostiles
-- Donjons dangereux
-- Boss puissants
-
-## 🚀 Déploiement sur GitHub Pages
-
-Le projet est configuré pour être déployé automatiquement sur GitHub Pages :
-
-```bash
-# Déployer sur GitHub Pages
-npm run deploy
+3d-test/
+├── main.py              # Fichier principal du jeu
+├── quest_system.py      # Système de quêtes
+├── ai_system.py         # Système d'IA
+├── inventory_system.py  # Système d'inventaire et commerce
+├── requirements.txt     # Dépendances Python
+└── README.md           # Ce fichier
 ```
 
-L'URL sera : `https://locktix.github.io/testcaca/`
+### Systèmes Principaux
 
-## 🔧 Configuration
+#### 1. RPGGame (main.py)
+- **Gestion du monde 3D** avec Ursina Engine
+- **Contrôle du joueur** et caméra
+- **Interface utilisateur** et HUD
+- **Boucle principale** du jeu
 
-### Variables d'Environnement
-Créez un fichier `.env.local` :
-```env
-VITE_GAME_TITLE=Flyff Universe Clone
-VITE_API_URL=http://localhost:3001
-```
+#### 2. QuestSystem (quest_system.py)
+- **Gestion des quêtes** avec objectifs et récompenses
+- **Progression** et sauvegarde des quêtes
+- **Système de niveaux** requis
 
-### Personnalisation
-- Modifiez `tailwind.config.js` pour changer les couleurs
-- Ajustez `src/stores/gameStore.ts` pour les paramètres du jeu
-- Personnalisez les zones dans `src/components/game/Terrain.tsx`
+#### 3. AISystem (ai_system.py)
+- **IA pour ennemis** avec comportements réalistes
+- **États d'IA** : veille, patrouille, poursuite, attaque, fuite
+- **NPCs interactifs** avec comportements spécifiques
 
-## 🤝 Contribution
+#### 4. InventorySystem (inventory_system.py)
+- **Gestion d'inventaire** avec poids et capacité
+- **Système de boutique** avec achats/ventes
+- **Fabrique d'objets** pour création dynamique
 
-Les contributions sont les bienvenues ! Voici comment contribuer :
+## 🎨 Personnalisation
 
-1. Fork le projet
-2. Créez une branche feature (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
+### Ajouter de Nouvelles Quêtes
+Modifiez `quest_system.py` et ajoutez de nouvelles quêtes dans la méthode `load_quests()`.
 
-## 📝 TODO
+### Créer de Nouveaux Ennemis
+Ajoutez de nouvelles classes d'IA dans `ai_system.py` en héritant de `AIController`.
 
-- [ ] Système de combat en temps réel
-- [ ] Multi-joueurs avec WebSocket
-- [ ] Système de quêtes
-- [ ] Boutiques et commerce
-- [ ] Système de guildes
-- [ ] Donjons et raids
-- [ ] Système de craft
-- [ ] Animations de personnages
-- [ ] Effets sonores et musique
-- [ ] Sauvegarde des données
+### Ajouter des Objets
+Utilisez `ItemFactory` dans `inventory_system.py` ou ajoutez des objets dans la boutique.
+
+## 🐛 Dépannage
+
+### Problèmes Courants
+
+1. **Erreur d'import Ursina**
+   ```bash
+   pip install ursina==5.2.0
+   ```
+
+2. **Performance lente**
+   - Réduisez la distance de rendu
+   - Désactivez les effets visuels
+
+3. **Contrôles non responsifs**
+   - Vérifiez que la fenêtre est active
+   - Redémarrez le jeu
+
+### Support
+Si vous rencontrez des problèmes, vérifiez :
+- Version de Python (3.8+)
+- Installation correcte des dépendances
+- Permissions d'écriture pour les sauvegardes
+
+## 🎵 Crédits
+
+- **Moteur 3D** : Ursina Engine
+- **Langage** : Python 3
+- **Développement** : Créé avec l'aide de l'IA
 
 ## 📄 Licence
 
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 🙏 Remerciements
-
-- Inspiré par [Flyff Universe](https://universe.flyff.com/)
-- Icônes par [Lucide React](https://lucide.dev/)
-- Polices par Google Fonts
-
-## 📞 Support
-
-Pour toute question ou problème :
-- Ouvrez une issue sur GitHub
-- Contactez-nous via Discord
-- Consultez la documentation
+Ce projet est open source et disponible sous licence MIT.
 
 ---
 
-**Amusez-vous bien dans le monde de Madrigal !** 🎮✨ 
+**Amusez-vous bien dans le Royaume Mystérieux !** 🗡️🛡️✨ 

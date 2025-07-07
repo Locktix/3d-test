@@ -1,0 +1,27 @@
+{
+    "game_sessions": 1,
+    "total_playtime": 120,
+    "quests_completed": 1,
+    "enemies_defeated": {
+        "goblins": 2,
+        "trolls": 1,
+        "total": 3
+    },
+    "items_collected": {
+        "weapons": 1,
+        "armor": 0,
+        "potions": 1,
+        "materials": 0,
+        "total": 2
+    },
+    "gold_earned": 150,
+    "gold_spent": 80,
+    "experience_gained": 200,
+    "levels_gained": 1,
+    "deaths": 1,
+    "saves_created": 1,
+    "achievements": [
+        "Premier Combat",
+        "Quêteur Débutant"
+    ]
+}

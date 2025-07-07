@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 Flyff Universe Clone
+Copyright (c) 2024 RPG Aventure 3D - Le Royaume Mystérieux
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -18,4 +18,34 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. 
+SOFTWARE.
+
+---
+
+## Crédits et Remerciements
+
+### Technologies Utilisées
+- **Ursina Engine**: Moteur 3D pour Python
+- **Panda3D**: Moteur graphique sous-jacent
+- **Pygame**: Gestion audio et entrées
+- **NumPy**: Calculs mathématiques
+- **Python**: Langage de programmation principal
+
+### Ressources
+- **Textures**: Créées avec des outils open source
+- **Modèles 3D**: Formes géométriques de base d'Ursina
+- **Sons**: Générés ou libres de droits
+
+### Contribution
+Ce projet est open source et les contributions sont les bienvenues !
+Veuillez consulter le README.md pour les instructions de contribution.
+
+### Support
+Pour toute question ou problème :
+- Consultez la documentation (README.md, TECHNICAL_DOCS.md)
+- Ouvrez une issue sur le repository
+- Contactez l'équipe de développement
+
+---
+
+*Jouez bien et amusez-vous dans le Royaume Mystérieux !* 🗡️🛡️✨ 
